@@ -1,0 +1,18 @@
+﻿services:
+  rabbitmqsender:
+    image: rabbitmqsender
+    build:
+      context: .
+      dockerfile: RabbitMqSender/Dockerfile
+
+  rabbitmqreceiver:
+    image: rabbitmqreceiver
+    build:
+      context: .
+      dockerfile: RabbitMqReceiver/Dockerfile
+
+  rabbitmqwaitrequestandsendrespons:
+    image: rabbitmqwaitrequestandsendrespons
+    build:
+      context: .
+      dockerfile: RabbitMqWaitRequestAndSendRespons/Dockerfile
